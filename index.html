@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/ae6add6e95.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-4 mb-4">ToDo List</h1>
+        <div class="input-group">
+            <input id="task-name" type="text" class="form-control" placeholder="Nombre de la tarea">
+            <input id="task-desc" type="text" class="form-control" placeholder="Descripción de la tarea">
+            <select id="task-priority" class="form-control">
+                <option value="">Prioridad</option>
+                <option value="1">1 (Poco importante)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Muy importante)</option>
+            </select>
+            <button id="add-task-btn" class="btn btn-primary">Agregar Tarea</button>
+        </div>
+        <div class="search mt-3">
+            <input id="search-input" type="text" placeholder="Buscar" class="form-control">
+            <button id="search-title-btn" class="btn btn-info mt-2">Buscar por Título</button>
+            <button id="search-priority-btn" class="btn btn-info mt-2">Buscar por Prioridad</button>
+            <button id="clear-search-btn" class="btn btn-warning mt-2">Limpiar Búsqueda</button>
+        </div>
+        <ul id="task-list" class="list-group mt-4">
+        </ul>
+        <!-- Modal -->
+        <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="editModalLabel">Editar Tarea</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <input id="edit-name" type="text" class="form-control" placeholder="Nombre de la tarea">
+                        <input id="edit-desc" type="text" class="form-control mt-2" placeholder="Descripción de la tarea">
+                        <select id="edit-priority" class="form-control mt-2">
+                            <option value="">Prioridad</option>
+                            <option value="1">1 (Poco importante)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Muy importante)</option>
+                        </select>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <button id="save-changes" type="button" class="btn btn-primary" data-dismiss="modal">Guardar cambios</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+.priority-1 { background-color: green; color: white; }
+.priority-2 { background-color: limegreen; color: white; }
+.priority-3 { background-color: yellow; color: black; }
+.priority-4 { background-color: darkorange; color: white; }
+.priority-5 { background-color: red; color: white; }
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.action-buttons {
+    display: flex;
+    gap: 1rem;
+}
+.action-buttons button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.completed {
+    text-decoration: line-through;
+    background-color: gray;
+}
