@@ -4,20 +4,20 @@
 .priority-4 { background-color: darkorange; color: white; }
 .priority-5 { background-color: red; color: white; }
 .list-group-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
 }
 .action-buttons {
-    display: flex;
-    gap: 1rem;
+     display: flex;
+     gap: 1rem;
 }
 .action-buttons button {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
+     border: none;
+     background-color: transparent;
+     cursor: pointer;
 }
 .completed {
-    text-decoration: line-through;
-    background-color: gray;
+     text-decoration: line-through;
+     background-color: gray;
 }
